@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050210;
+
+}
+
+#krug1::before { 
+    content: '';
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: repeating-linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    filter: brightness(120%) blur(30px) opacity(20%);
+   
+}
+    
+
+
+
+#krug1 {
+    margin: 100px auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: repeating-linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    border-radius: 50%;
+    animation: animation1 2s linear infinite;
+   
+   
+}
+
+@keyframes animation1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    } 
+} 
+
+#krug2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: #050210;
+    border-radius: 50%;
+
+}
+
+
+
+#krug3 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    background-color: #0b0520;
+    border-radius: 50%;
+    animation: animation2 1s ease-out infinite;
+ 
+      
+
+}
+
+@keyframes animation2 {
+    from {
+       transform: scale(0, 0);
+    }
+    to {
+       transform: scale(1, 1);
+    }
+}
